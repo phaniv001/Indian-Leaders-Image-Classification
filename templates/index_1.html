@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Prediction</title>
+</head>
+<body>
+    <h1 class="some-class">Hello,World!!</h1>
+    <form align="center" action="/predict" method="POST">
+        <input type="text" name="spl" placeholder="Sepal Lengh(CM)"><br>
+        <input type="text" name="spw" placeholder="Sepal Width(CM)"><br>
+        <input type="text" name="ptl" placeholder="Petal Lengh(CM)"><br>
+        <input type="text" name="ptw" placeholder="Petal Width(CM)"><br>
+        <button class="btn-success">Predict</button>
+
+    </form>
+    <div class = "row" align = "center">
+        {% if prediction %}
+        <h2 class = "text-warning">{{prediction}}</h2>
+        {% endif %}
+
+    </div>
+
+
+</body>
+</html>
+
+
+
